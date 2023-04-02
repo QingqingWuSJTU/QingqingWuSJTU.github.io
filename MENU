@@ -1,14 +1,8 @@
-Research-Group-Name
-    Home            [/index.html]
-    Members         [/members.html]
-    Teaching	    [/teaching.html]	
-    News            [/news.html]
-	
-Research
-    Active Topics   [/research.html]
-    Publications    [/publications.html]
-    Software        [/software.html]
+Home
+    About me            [index.html]
 
-Contacts
-    Contact us      [/contacts.html]
-	
+Research
+    Publications        [publications.html]
+    Experiences		[experiences.html]
+    Projects      [projects.html]
+    Awards		[awards.html]
