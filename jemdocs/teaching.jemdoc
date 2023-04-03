@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU}{teaching.html}, showsource
+= Teaching
+
+
+== Course Materials
+~~~
+颜色块CS2501H: Discrete Mathematics (Honor) (Zhiyuan Honor Course)
+
+- Part I: Propositional Logic    [Lecture Notes 1]
+
+- Part II: Predicate Logic    [Lecture Notes 2]
+
+- Part III: Set Theory    [Lecture Notes 3]
+
+- Part IV: Relations    [Lecture Notes 4]
+
+- Part V: Functions    [Lecture Notes 5]
+
+- Part VI: Graph Theory    [Lecture Notes 6]
+~~~

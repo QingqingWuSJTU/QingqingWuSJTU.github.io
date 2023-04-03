@@ -1,0 +1,9 @@
+Menu
+    Home                [index.html]
+    Biography            [biography.html]
+    Publications    [publications.html]
+    Projects             [projects.html]
+    Teaching             [teaching.html]
+    Honors and Awards   [honors.html]
+
+# vim: et

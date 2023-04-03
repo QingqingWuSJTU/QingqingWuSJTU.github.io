@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="css/jemdoc.css" type="text/css" />
 <link rel="stylesheet" href="css/jacob.css" type="text/css" />
-<title>Xiang Yin</title>
+<title>jemdoc &ndash; add a menu</title>
 </head>
 <body>
 <!-- MathJax -->
@@ -35,7 +35,7 @@ _gaq.push(['_trackPageview']);
 <tr valign="top">
 <td id="layout-menu">
 <div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="biography.html">Biography</a></div>
 <div class="menu-item"><a href="publications.html">Publications</a></div>
 <div class="menu-item"><a href="projects.html">Projects</a></div>
@@ -44,56 +44,49 @@ _gaq.push(['_trackPageview']);
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Xiang Yin</h1>
+<h1>jemdoc &ndash; add a menu</h1>
 </div>
-<table class="imgtable"><tr><td>
-<a href="https://www.baidu.com"><img src="https://i.postimg.cc/TPKHC2yg/20230402134943.jpg" alt="Jacob Mattingley" width="300px" height="300px" /></a>&nbsp;</td>
-<td align="left"><ul>
-<li><p>Xiang Yin
+<p>jemdoc provides an easy way to add a &lsquo;menu&rsquo; like the one you see at the left of
+this page. You should create a file called <tt>MENU</tt>, for example, in the current
+directory. This website's <tt>MENU</tt> looks something like this:
 </p>
-</li>
-</ul>
-<ul>
-<li><p>Associate Professor
+<div class="codeblock">
+<div class="blockcontent"><pre>
+menu
+    Home               [index.html]
+    Biography        [Biography.html]
+    Publications     [Publications.html]
+    Projects            [Projects.html]
+    Teaching          [Teaching.html]
+</pre></div></div>
+<p>To use the menu, start the first line of <i>each</i> source file with a special
+comment like this one:
 </p>
-</li>
-</ul>
-<ul>
-<li><p>Department of Automation, Shanghai Jiao Tong University, Shanghai, China
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: menu{MENU}{index.html}
+</pre></div></div>
+<p>(Replace <tt>index.html</tt> with the name of the relevant html page.) This will add a
+menu from the file called <tt>MENU</tt>, and underline and darken the menu entry
+corresponding to <tt>index.html</tt>.
 </p>
-</li>
-</ul>
-<ul>
-<li><p>Email: yinxiang@sjtu.edu.cn
+<h2>Relative paths</h2>
+<p>Optionally, include a <tt>prefix</tt> which instructs jemdoc where the root of the menu
+is located relative to a particular page.
 </p>
-</li>
-</ul>
-</td></tr></table>
-<h2>Goals</h2>
-<p>Two postdoctoral researcher positions are available in my group in the area of Control Theory, CPS and Formal Methods.
+<div class="codeblock">
+<div class="blockcontent"><pre>
+# jemdoc: menu{MENU}{pageinsubdir.html}{prefix}
+</pre></div></div>
+<h2>A note on menu widths</h2>
+<p>jemdoc will create menu entries that do not wrap. If you have a particularly
+long title, or menu item, insert manual linebreaks using <tt>\</tt><tt>n</tt> in your
+MENU file. Multi-line menu items will (by default) have their second and
+subsequent lines slightly indented.
 </p>
-<h2>Prospective Students</h2>
-<p>I am looking for PhD and Master students who are interested in the following areas. Please contact me if you are interested.
-</p>
-<ul>
-<li><p>Systems and Control Theory, Cyber-Pyhsical Systems, Discrete-Event Systems
-</p>
-</li>
-</ul>
-<ul>
-<li><p>Robotics, Motion Planning, Intelligent Manufacturing Systems
-</p>
-</li>
-</ul>
-<ul>
-<li><p>Cyber-Secuirty, Formal Methods, Theoretical Computer Science
-</p>
-</li>
-</ul>
 <div id="footer">
 <div id="footer-text">
 Page generated 2023-04-03 18:36:26 中国标准时间, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
-(<a href="index.jemdoc">source</a>)
 </div>
 </div>
 </td>
